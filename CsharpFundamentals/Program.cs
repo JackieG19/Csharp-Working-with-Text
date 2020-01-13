@@ -6,16 +6,15 @@ namespace CshapFundamentals
     {
         static void Main(string[] args)
         {
-            var fullName = "Mosh Hamedani";
-            
-            var index = fullName.IndexOf(' ');
-            
-           	var firstName = fullName.Substring(0, index);
-    		var lastName = fullName.Substring(index + 1);
-            /*Substring() is used to retrieve a substring from the current instance of the string. 
-            This method can be overloaded by passing the different number of parameters to it.*/
-    		Console.WriteLine("FirstName: " + firstName);
-    		Console.WriteLine("LastName: " + LastName);
+            var fullName = "Mosh Hamedani";   
+            //var index = fullName.IndexOf(' ');
+         
+           	var names = fullName.Split(' ');
+            /*This method splits a string into an array of strings separated by the split delimeters. 
+            The split delimiters can be a character or an array of characters or an array of strings.*/
+			
+            Console.WriteLine("FirstName" + name[0]);
+			Console.WriteLine("LastName" + name[1]);
         }
     }
 }
