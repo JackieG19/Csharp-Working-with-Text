@@ -6,12 +6,15 @@ namespace CshapFundamentals
     {
         static void Main(string[] args)
         {
-		var str = "25";
-    		//Convert.ToInt32(str);
+		float price = 29.95f;
+    		//price.ToString("C")
     		
-		var age = Convert.ToByte(str);
-    		//Converts the specified string representation of a number to an integer.
-		Console.WriteLine(age);
+		/*Converts the value of this instance to a String.*/
+		Console.WriteLine(price.ToString("C")); // "C" - a currency value.
+		// 29.95
+    		
+		/*the method format the numeric value with currency sign and without any decimal digit*/
+		Console.WriteLine(price.ToString("C0")); // $2,995
         }
     }
 }
