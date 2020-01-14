@@ -6,18 +6,23 @@ namespace CshapFundamentals
     {
 	static void Main(string[] args)
 	{
-		var builder = new StringBuilder(); // cannot be changed once create
+		var builder = new StringBuilder("Hello World");
 			
 		builder.Append('-', 10);
-		/*this method can be used to add or append a string value of an object 
-		to the end of a string represented by the current StringBuilder object*/
-		
 		builder.AppendLine();
-		/*This method append the string with a newline at the end.*/
-		
 		builder.Append("Header");
 		builder.AppendLine();
 		builder.Append('-', 10);
+		Console.WriteLine(builder);
+			
+		/*Replaces a specified character or string with another specified character or string*/	
+		builder.Replace('-', '+');
+		
+		/*Removes the specified range of characters*/
+		builder.Remove(0, 10);
+			
+		/*Inserts the string of a specified object into a specified character position.*/
+		builder.Insert(0, new string('-'), 10);
 			
 		Console.WriteLine(builder);
 	}
