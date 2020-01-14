@@ -6,15 +6,15 @@ namespace CshapFundamentals
     {
         static void Main(string[] args)
         {
-		float price = 29.95f;
-    		//price.ToString("C")
-    		
-		/*Converts the value of this instance to a String.*/
-		Console.WriteLine(price.ToString("C")); // "C" - a currency value.
-		// 29.95
-    		
-		/*the method format the numeric value with currency sign and without any decimal digit*/
-		Console.WriteLine(price.ToString("C0")); // $2,995
+		var sentence = "This is going to be a really really really really really long text";
+		const int maxLength = 20;
+			
+			if(sentence.Length < maxLength)
+				Console.WriteLine(sentnece);
+			else
+			{
+				sentence.Substring(0, maxLength);
+			}
         }
     }
 }
