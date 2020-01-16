@@ -12,6 +12,10 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             var fullName = "Mosh Hamedani";
+            Console.WriteLine("Trim: '{0}'", fullName.Trim());
+            
+            /*String.Trim Method - Returns a new string in which all leading and trailing occurrences 
+            of a set of specified characters from the current string are removed.*/
         }
     }
 }
