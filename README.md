@@ -89,3 +89,6 @@ ___
 - Remove()
 - Replace()
 - Clear()
+___
+
+Next -> [Working with Files](https://github.com/JackieG19/Csharp-Working-with-Files)
