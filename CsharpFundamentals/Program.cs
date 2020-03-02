@@ -12,8 +12,9 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             var fullName = "Mosh Hamedani";
-            Console.WriteLine("ToUpper: {0}", fullName.Trim().ToUpper());            
-            /*ToUpper() Method - converts every characters to uppercase*/
+            var index = fullName.IndexOf(' ');
+            /*This method is used to find the zero based index of the first occurrence of a specified character or 
+            string within current instance of the string. It returns -1 if the character or string is not found.*/
         }
     }
 }
