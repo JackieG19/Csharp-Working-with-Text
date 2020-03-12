@@ -1,20 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-/*using statement*/
+using System;
 
-namespace HelloWorld
+namespace CshapFundamentals
 {
     class Program
     {
         static void Main(string[] args)
         {
             var fullName = "Mosh Hamedani";
+            
             var index = fullName.IndexOf(' ');
-            /*This method is used to find the zero based index of the first occurrence of a specified character or 
-            string within current instance of the string. It returns -1 if the character or string is not found.*/
+            
+           	var firstName = fullName.Substring(0, index);
+    		var lastName = fullName.Substring(index + 1);
+            /*Substring() is used to retrieve a substring from the current instance of the string. 
+            This method can be overloaded by passing the different number of parameters to it.*/
+    		Console.WriteLine("FirstName: " + firstName);
+    		Console.WriteLine("LastName: " + LastName);
         }
     }
 }
