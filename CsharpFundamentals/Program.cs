@@ -6,15 +6,11 @@ namespace CshapFundamentals
     {
         static void Main(string[] args)
         {
-		var fullName = "Jackie Gut";            
-           	
-		//fullName.Replace("Jackie", "Jackey");
-		//fullName.Replace('o', '0');
-		//fullName.Replace(' ', " ");
+		var fullName = "Jackie Gut";  
 		
-		Console.WriteLine(fullName.Replace("Jackie", "Jackey"););
-		/*Returns a new string in which all occurrences of a specified string 
-		in the current instance are replaced with another specified string.*/
+         	if(String.IsNullOrWhiteSpace(" ")) 
+			Console.WriteLine("Invaild");
+		/*checking whether the specified string is null or contains only white-space characters*/
         }
     }
 }
