@@ -8,9 +8,19 @@ namespace CshapFundamentals
         {
 		var fullName = "Jackie Gut";  
 		
-         	if(String.IsNullOrWhiteSpace(" ")) 
-			Console.WriteLine("Invaild");
-		/*checking whether the specified string is null or contains only white-space characters*/
+		// It returns true if the string contains only whitespace characters or is null.
+         	if(String.IsNullOrEmpty(Null))
+    			Console.WriteLine("Invalid");
+    		
+    		if(String.IsNullOrEmpty("")) // empty string
+    			Console.WriteLine("Invaild");
+    		
+		// this doesn't work
+    		if(String.IsNullOrEmpty(" ")) // a space
+    			Console.WriteLine("Invaild");
+    		
+    		if(String.IsNullOrEmpty(" ".Trim())) // trim the empty string
+    			Console.WriteLine("Invaild");
         }
     }
 }
